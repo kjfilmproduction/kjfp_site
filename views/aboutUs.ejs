@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="aboutUsStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="loader.js" defer></script>
+    <script src="languageButton.js" defer></script>
+    <script src="smallNav.js" defer></script>
+    <script src="app.js" type="application/javascript" defer></script>
+    <script src="pageFooter.js" defer></script>
+    <script src="traversal.js" defer></script>
+    <title><%= lang['nav2'] + ' | kjfilmproduction.ee' %></title>
+</head>
+<body>
+    <nav id="navigation">
+        <a id="logoContainer" href="<%= lang['href1'] %>"><img id='logo'/></a>
+        <ul>
+            <li>
+                <a href="<%= lang['href1'] %>" class="navItem"><%= lang['nav1'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href2'] %>" class="navItem active"><%= lang['nav2'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href3'] %>" class="navItem"><%= lang['nav3'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href4'] %>" class="navItem"><%= lang['nav4'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href5'] %>" class="navItem"><%= lang['nav5'] %></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="languageBtn"></div>
+    <section id="animationMainContainer">
+        <p id="meistText" class="beforeTraverse"><%= lang['aboutUs1'] %></p>
+        <section class="animation">
+            <div class="animationC1">
+                <img id="img" class="from-left animationEl" src="https://www.dropbox.com/scl/fi/vcbishqw4tzgkmr0sql3i/img1.jpg?rlkey=xo7jspyey83p7a6unqig0ij0s&st=2y6gh6pq&raw=1"/>
+                <p id="text" class="from-right animationEl"><%= lang['aboutUs2'] %></p>
+            </div>
+        </section>
+
+        <section class="animation">
+            <div class="animationC2">
+                <p id="text" class="from-left animationEl"><%= lang['aboutUs3'] %></p>
+                <img id="img" class="from-right animationEl" src="https://www.dropbox.com/scl/fi/6gf34si1b85tifb5f7wbw/img7.jpg?rlkey=ke3lmyas823udzk4l8l7x5lwn&st=5pl6htys&raw=1"/>
+            </div>
+        </section>
+    </section>
+    <section class="equipmentContainer">
+        <p id="equipmentTitle" class="beforeTraverse"><%= lang['aboutUs4'] %></p>
+
+        <div class="equipmentMain">
+            <div id="equipment">
+                <p>Sony a7 III</p>
+                <p>4K 25fps, 1080p 100fps</p>
+                <img src="https://www.dropbox.com/scl/fi/y8qrak3ar0p0i7i9xugso/sonyCam.png?rlkey=qy63fpqgqp2niioeb8yi5a33r&st=mdwyp6hl&raw=1">
+            </div>
+            <div id="equipment">
+                <p>DJI Mavic Pro</p>
+                <p>4K 25fps</p>
+                <img src="https://www.dropbox.com/scl/fi/uphrmturbfcmu7k8ybi6m/dji.png?rlkey=redibwmxul5lnjh7xi4b6icoi&st=mab61zgk&raw=1">
+            </div>
+            <div id="equipment">
+                <p>DJI Ronin-SC</p>
+                <p><%= lang['aboutUs5'] %></p>
+                <img src="https://www.dropbox.com/scl/fi/tbk8xyzcgbi2ffngy7vx2/djiRonin.png?rlkey=fgin7f8vmsc1oic1yhfnulgke&st=nln5n4w1&raw=1">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+
+</body>
+</html>

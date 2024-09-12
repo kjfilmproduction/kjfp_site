@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="portfolioStyle.css">
+    <script src="loader.js" defer></script>
+    <script src="languageButton.js" defer></script>
+    <script src="smallNav.js" defer></script>
+    <script src="pageFooter.js" defer></script>
+    <script src="traversal.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title><%= lang['nav3'] + ' | kjfilmproduction.ee' %></title>
+</head>
+<body>
+    <nav id="navigation">
+        <a id="logoContainer" href="<%= lang['href1'] %>"><img id='logo'/></a>
+        <ul>
+            <li>
+                <a href="<%= lang['href1'] %>" class="navItem"><%= lang['nav1'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href2'] %>" class="navItem"><%= lang['nav2'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href3'] %>" class="navItem active"><%= lang['nav3'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href4'] %>" class="navItem"><%= lang['nav4'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href5'] %>" class="navItem"><%= lang['nav5'] %></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="languageBtn"></div>
+
+    <section id="porfolioContainer" class="beforeTraverse">
+        <div id="videoBtns">
+            <button class="videoBtn"><%= lang['porfolio1'] %></button> <!-- lisa 'activeVideos', kui yt olemas -->
+            <button class="videoBtn"><%= lang['porfolio2'] %></button>
+        </div>
+        <section id="videoHolder">
+            <div class="videos show">
+            </div>
+        </section>
+    </section>
+
+    <div id="invisibleBarrier"></div>
+
+    <footer class="footer"></footer>
+
+</body>
+</html>

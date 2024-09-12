@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contactStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="loader.js" defer></script>
+    <script src="languageButton.js" defer></script>
+    <script src="smallNav.js" defer></script>
+    <script src="pageFooter.js" defer></script>
+    <script src="traversal.js" defer></script>
+    <script src="captcha.js" defer></script>
+    <title><%= lang['nav5'] + ' | kjfilmproduction.ee' %></title>
+</head>
+<body>
+    <nav id="navigation">
+        <a id="logoContainer" href="<%= lang['href1'] %>"><img id='logo'/></a>
+        <ul>
+            <li>
+                <a href="<%= lang['href1'] %>" class="navItem"><%= lang['nav1'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href2'] %>" class="navItem"><%= lang['nav2'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href3'] %>" class="navItem"><%= lang['nav3'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href4'] %>" class="navItem"><%= lang['nav4'] %></a>
+            </li>
+            <li>
+                <a href="<%= lang['href5'] %>" class="navItem active"><%= lang['nav5'] %></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="languageBtn"></div>
+    <section class="contactFormContainer beforeTraverse">
+        <div class="contactText">
+            <p><%= lang['contact1'] %></p>
+        </div>
+        <form action="/contact" method="POST" id="form">
+            <div class="align">
+                <div>
+                    <label for="name"><%= lang['nameForm'] %></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email"><%= lang['emailForm'] %></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message"><%= lang['messageForm'] %></label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </div>
+                <div class="g-recaptcha" data-sitekey="6LdvTaopAAAAANmrB7Lw9eS6L9tEgHYzfPJmkEpp"></div>
+                <p id="messageInfo"></p>
+                <button type="submit" value="Submit" id="btn"><%= lang['sendForm'] %></button>
+        </form>
+    </section>
+
+    <footer class="footer"></footer>
+
+</body>
+</html>

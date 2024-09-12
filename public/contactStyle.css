@@ -1,0 +1,107 @@
+.contactFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px - 114.5px);
+}
+
+form {
+    padding: 20px 15px;
+    background-color: var(--ECECEC);
+    border-radius: 6px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+label {
+    color: var(--purple-color);
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px;
+}
+
+input, textarea {
+    padding: 7px;
+    border-radius: 6px;
+    outline: none;
+    /* width: max(303px, 30vw); */
+    width: clamp(303px, 500px, 50vw);
+    border: 2px solid rgb(147, 147, 147);
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--purple-color-light);
+}
+
+#message {
+    resize: none;
+    height: 150px;
+}
+
+.align > div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#btn {
+    border: none;
+    width: 165px;
+    height: 45px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--purple-color);
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 5px;
+    transition: 150ms ease-in;
+}
+
+#btn:hover {
+    transform: translateY(-1px);
+    background-color: var(--purple-color-light);
+}
+
+#messageInfo {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    height: 30px;
+    align-content: center;
+}
+
+.contactText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 5px;
+    /* width: max(300px, 45vw); */
+    /* width: max(303px, 30vw); */
+    width: clamp(303px, 500px, 50vw);
+}
+
+.contactText > p {
+    font-size: clamp(10px, 8vw, 2.5em);
+    color: var(--purple-color);
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .contactFormContainer {
+        justify-content: flex-end;
+    }
+}
