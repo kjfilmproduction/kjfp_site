@@ -97,6 +97,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 140px 0px; /* 140px 20px */
+    min-height: calc(100vh - 60px - 1400px);
 }
 
 .equipmentMain {
@@ -200,4 +201,3 @@
         /* max-width: 350px; */
     }
 }
-

@@ -90,6 +90,7 @@
     padding: 100px 0px;
     max-width: 1400px;
     margin: 0 auto;
+    min-height: calc(100vh - 60px - 1070.78px);
     /* height: 100vh; */
     /* background: linear-gradient(360deg, rgb(102,0,148), rgba(208, 106, 255, 0.5)); */
 }

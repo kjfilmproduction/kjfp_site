@@ -56,6 +56,6 @@ app.use((err, req, res, next) => {
 
 const server = http.createServer(app)
 
-server.listen(process.env.PORT_HOST || 4000, () => {
+server.listen(process.env.PORT || 4000, () => {
     console.log(`Server running`)
 })

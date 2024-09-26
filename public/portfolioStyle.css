@@ -5,7 +5,7 @@
     align-items: center;
     padding: 100px 0px;
     max-width: 1400px;
-    min-height: 700px; /* eemalda, kui yt video olemas */
+    min-height: calc(100vh - 60px); /* eemalda, kui yt video olemas */
     margin: 0 auto;
 }
 
@@ -34,11 +34,6 @@ iframe {
     padding: 10px;
     text-align: center;
     color: var(--purple-color);
-}
-
-.videoHolder {
-    /* display: none; */
-    /* position: absolute; */
 }
 
 #invisibleBarrier {

@@ -77,7 +77,7 @@ app.get('/', (req, res) => {
 
 // render aboutUs page (ee)
 app.get('/aboutus', (req, res) => {
-    res.render('aboutUs.ejs', { lang: langEE })
+    res.render('aboutus.ejs', { lang: langEE })
 })
 
 // render portfolio page (ee)
